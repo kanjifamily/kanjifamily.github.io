@@ -2,4 +2,20 @@
 title: Kanji
 layout: default
 ---
-<h1>The website of the Kanji family.</h1>
+<div class="page-header">
+  <h1><a href="/">Kanji</a> <small>The website of the Kanji family.</small></h1>
+</div>
+<ul class="media-list">
+  {% for member in site.github.organization_members %}
+    <a href="{{ member.html_url }}">
+      <li class="media">
+        <div class="media-left">
+          <img class="media-object" src="{{ member.avatar_url }}" width="64" alt="{{ member.login }}">
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">{{ member.login }}</h4>
+        </div>
+      </li>
+    </a>
+  {% endfor %}
+</ul>
