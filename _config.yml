@@ -1,0 +1,4 @@
+name: Kanji
+description: The website of the Kanji family.
+url: http://kanji.family
+exclude: [README.md, LICENSE.md, CNAME, Gemfile, Gemfile.lock, vendor, script]
